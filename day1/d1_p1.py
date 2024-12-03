@@ -1,8 +1,6 @@
 first = []
 second = []
 ans = []
-import os
-cwd = os.getcwd()
 with open("day1\input_day1") as file:
     while line := file.readline():
         newline = line.rstrip().split(' ')

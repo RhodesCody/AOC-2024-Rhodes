@@ -27,9 +27,9 @@ def mult(list):
 z = 0
 
 with open("day3\input_day3.txt") as file:
-    while line := file.readline().rstrip():
-        pattern = r"mul\(\d+,\d+\)|do\(\)|don't\(\)"
-        match2 = re.findall(pattern, line)
-        z += mult(match2)
+    data = file.read()
+    pattern = r"mul\(\d+,\d+\)|do\(\)|don't\(\)"
+    match2 = re.findall(pattern, data)
+    z += mult(match2)
 
 print(z)
